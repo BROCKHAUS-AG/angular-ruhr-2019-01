@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>NX Workspace</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/bag.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>NX Workspace</h1>
+				<p><q cite="https://nrwl.io/nx/what-is-nx">An open source toolkit for enterprise Angular applications.</q></p>
+				<p><small>David Reher</small></p>
+			</section>
+
+			<section>
+				<section>
+					<h2>Was ist NX?</h2>
+					<ul>
+						<li>Erweiterung für Angular CLI</li>
+						<li>Mono-Repo</li>
+						<li class="fragment">Laufzeit-Bibliotheken</li>
+						<li class="fragment">Linter</li>
+						<li class="fragment">Code-Generatoren</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Von wem kommt NX?</h2>
+					<ul>
+						<li>NRWL (Narwhal Technologies Inc)</li>
+						<li>Victor Savkin</li>
+						<li>Jeff Cross</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Getting started</h2>
+					<div class="fragment">
+						<h3>Installation</h3>
+						<pre><code class="hljs" data-trim contenteditable>
+npm install --global @angular/cli
+npm install --global @nrwl/schematics
+					</code></pre>
+					</div>
+				</section>
+				<section>
+					<h3>Neues Projekt</h3>
+					<pre><code class="hljs" data-trim contenteditable>
+create-nx-workspace angular-ruhr
+					</code></pre>
+				</section>
+				<section>
+					<h3>Vorhandenes Projekt</h3>
+					<pre><code class="hljs" data-trim contenteditable>
+ng add @nrwl/schematics
+					</code></pre>
+				</section>
+			</section>
+
+			<section>
+				<h2>Demo</h2>
+				<p><small>Genug der Folien ...</small></p>
+			</section>
+
+			<section>
+				<h2>Kontakt</h2>
+				<p>David Reher<br>
+					<a href="mailto:dreher@brockhaus-ag.de">dreher@brockhaus-ag.de</a><br>
+					<a href="https://brock.haus">www.brockhaus-ag.de</a>
+				</p>
+				<img src="qr-code.png" alt="" style="width: 30%" />
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
+</html>
